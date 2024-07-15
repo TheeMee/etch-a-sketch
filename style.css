@@ -1,11 +1,11 @@
 .gridContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .rowContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .pixel {

@@ -16,17 +16,16 @@ function createGrid (width) {
     }
 }
 
-
 let rowContainer = document.querySelectorAll('.rowContainer');
 let pixel = document.querySelectorAll('.pixel');
 
 //create a even listener fired when the mouse enters the pixel
 gridContainer.addEventListener('mouseover', (event) => {
-    console.log('log');
     let target = event.target;
 
     if (target.classList.contains('rowContainer')) {
-        event.stopPropagation()
+        console.log("log");
+        event.stopPropagation();
     } else if (target.classList.contains('pixel')) {
         const newUpdate = Number(target.style.opacity) + 0.1;
         target.style.opacity = newUpdate;
@@ -43,7 +42,7 @@ cleaningButton.addEventListener('click', () => {
     do {
         let width = Number(prompt("please select the width of the square canvas lower than 250"));
 
-        if (width <= 250) {
+        if (width <= 300) {
             console.log('run');
             while (gridContainer.lastChild) {
                 gridContainer.removeChild(gridContainer.lastChild);
