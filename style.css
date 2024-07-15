@@ -11,7 +11,8 @@
 .pixel {
     width: 5px;
     height: 5px;
-    background-color: white;
+    background-color: red;
+    opacity: 0;
 }
 
 #new-button {

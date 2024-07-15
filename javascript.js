@@ -28,7 +28,8 @@ gridContainer.addEventListener('mouseover', (event) => {
     if (target.classList.contains('rowContainer')) {
         event.stopPropagation()
     } else if (target.classList.contains('pixel')) {
-        target.style.backgroundColor = 'red';
+        const newUpdate = Number(target.style.opacity) + 0.1;
+        target.style.opacity = newUpdate;
     }
 }); 
 
