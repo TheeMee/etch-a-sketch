@@ -1,9 +1,9 @@
-.grid-container {
+.gridContainer {
     display: flex;
     flex-direction: column;
 }
 
-.row-container {
+.rowContainer {
     display: flex;
     flex-direction: row;
 }
@@ -11,5 +11,6 @@
 .pixel {
     width: 5px;
     height: 5px;
+    background-color: white;
 }
 
