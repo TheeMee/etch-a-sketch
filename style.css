@@ -1,0 +1,15 @@
+.grid-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.pixel {
+    width: 5px;
+    height: 5px;
+}
+
